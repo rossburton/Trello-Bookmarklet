@@ -108,6 +108,10 @@
         name: name, 
         desc: desc
       }, function(card){
+          Trello.post("cards/" + card.id + "/attachments",
+                      { url: image })
+/*
+                      function(
         console.log(card);
         // Display a little notification in the upper-left corner with a link to the card
         // that was just created
@@ -132,6 +136,7 @@
           $cardLink.fadeOut(3000);
         }, 5000)
       })
+*/
     }
   }
 
