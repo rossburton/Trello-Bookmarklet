@@ -59,7 +59,7 @@
         name = $('h1 .hP').text().trim();
     
     } else if ($(".property-details").length) {
-        name = "Rightmove " + $("#propertyHeaderPrice").text().trim()
+        name = $(".property-header-bedroom-and-price").text().trim()
     } else {
         // use page title as card title, taking trello as a "read-later" tool
         name = $.trim(document.title);
