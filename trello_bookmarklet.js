@@ -61,6 +61,8 @@
     } else if ($(".property-details").length) {
         // We're looking at a RightMove property
         name = $(".property-header-bedroom-and-price").text().trim();
+        image = $("img.js-gallery-main").attr("src");
+        console.log(image);
     } else {
         // use page title as card title, taking trello as a "read-later" tool
         name = $.trim(document.title);
