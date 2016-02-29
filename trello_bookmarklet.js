@@ -111,35 +111,7 @@
         Trello.post("cards/" + card.id + "/attachments",
                     { url: image });
     });
-/*
-                      function(
-        console.log(card);
-        // Display a little notification in the upper-left corner with a link to the card
-        // that was just created
-        var $cardLink = $("<a>")
-        .attr({
-          href: card.url,
-          target: "card"
-        })
-        .text("Created a Trello Card")
-        .css({
-          position: "absolute",
-          left: 0,
-          top: 0,
-          padding: "4px",
-          border: "1px solid #000",
-          background: "#fff",
-          "z-index": 1e3
-        })
-        .appendTo("body")
-
-        setTimeout(function(){
-          $cardLink.fadeOut(3000);
-        }, 5000)
-      })
-    }
-  }
-*/
+};
 
   var storage = window.localStorage;
   if(!storage) {
