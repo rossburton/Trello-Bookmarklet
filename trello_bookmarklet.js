@@ -109,7 +109,10 @@
         desc: desc
       }, function(card){
           Trello.post("cards/" + card.id + "/attachments",
-                      { url: image });
+                      { url: image })
+      }
+                 )
+    }
 /*
                       function(
         console.log(card);
@@ -136,9 +139,9 @@
           $cardLink.fadeOut(3000);
         }, 5000)
       })
-*/
     }
   }
+*/
 
   var storage = window.localStorage;
   if(!storage) {
