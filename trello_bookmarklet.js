@@ -109,7 +109,7 @@
         desc: desc
       }, function(card){
           Trello.post("cards/" + card.id + "/attachments",
-                      { url: image })
+                      { url: image });
 /*
                       function(
         console.log(card);
