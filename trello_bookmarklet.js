@@ -17,6 +17,7 @@
     var name;
     // Default description is the URL of the page we're looking at
     var desc = location.href;
+    var image;
 
     if(window.goBug) {
 
@@ -103,16 +104,13 @@
     name = name || 'Unknown page';
 
     // Create the card
-    if(name) {
-      Trello.post("lists/" + idList + "/cards", { 
-        name: name, 
+    Trello.post("lists/" + idList + "/cards", {
+        name: name,
         desc: desc
-      }, function(card){
-          Trello.post("cards/" + card.id + "/attachments",
-                      { url: image })
-      }
-                 )
-    }
+    }, function(card) {
+        Trello.post("cards/" + card.id + "/attachments",
+                    { url: image });
+    });
 /*
                       function(
         console.log(card);
