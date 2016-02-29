@@ -58,9 +58,9 @@
         // we're looking at an email in Gmail
         name = $('h1 .hP').text().trim();
     
-    }
-    
-    else {
+    } else if $(".property-details") {
+        name = "Rightmove " + $("#propertyHeaderPrice").text().trim()
+    } else {
         // use page title as card title, taking trello as a "read-later" tool
         name = $.trim(document.title);
         
