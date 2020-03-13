@@ -2,6 +2,9 @@
 javascript:(function(a){window.trelloAppKey="optional";window.trelloIdList="optional";var b=a.createElement("script");b.src="https://github.com/rossburton/Trello-Bookmarklet/blob/master/trello_bookmarklet.js";a.getElementsByTagName("head")[0].appendChild(b)})(document);
 ```
 
+Or as a link: <a href="javascript
+javascript:(function(a){window.trelloAppKey="optional";window.trelloIdList="optional";var b=a.createElement("script");b.src="https://github.com/rossburton/Trello-Bookmarklet/blob/master/trello_bookmarklet.js";a.getElementsByTagName("head")[0].appendChild(b)})(document);">Add To Trello</a>.
+
 This is a <a href="http://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a> you can use to create a card in <a href="https://trello.com">Trello</a> from ...
 
  - FogBugz cases
